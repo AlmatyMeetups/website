@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('fonts/WorkSans-Thin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+	background-color: #ffffff;
+	color: #4c527d;
+	font-size: 20px;
+    line-height: 30px;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    font-size: 16px;
+}
+
+.language-switcher a {
+    color: #4c527d;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.language-switcher a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	margin-left: 12%;
+	margin-right: 12%;
+}
+
+header {
+	padding: 0 0 0 20px;
+    text-align: center;
+    box-sizing: border-box;	
+
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center;     /* Centers the image vertically (optional) */
+    flex-direction: column; 
+}
+
+h2 {
+	font-family: 'Work Sans', sans-serif;
+    font-size: 35px;
+    line-height: 55px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 0px;
+}
+
+.button {
+    /* Layout */
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: 47px;
+    line-height: 47px;
+    padding: 0 29px;
+    margin: 0;
+    margin-right: 10px;
+    white-space: nowrap;
+
+    /* Typography */
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-shadow: none;
+    letter-spacing: 1px;
+    color: #fff;
+
+    /* Visual */
+    background-color: #001c46;
+    border: 2px solid #303030;
+    border-radius: 30px;
+    box-sizing: initial !important;
+
+    /* Interactive */
+    cursor: pointer;
+    outline: 0;
+    transition: color .1s linear, background-color .1s linear, border-color .1s linear;
+}
+
+.separator {
+    background-color: #ffffff;
+	height: 1px;
+	width: 57px;
+}
+
+.logo {
+    max-width: 700px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    mask-image: radial-gradient(circle, rgba(0, 0, 1, 1), rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0) 100%);
+    mask-size: cover;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+#left-column {
+	padding: 10px;
+}
+
+#right-column {	
+    margin-left: 10px;
+	padding: 10px;
+}
+
+.sub-columns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.sub-column {
+    flex: 1;
+}
+
+#image-column {
+	flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 10px;
+}
+
+.rounded-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+#text-column {
+	flex: 6;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+	header {
+		margin-top: 30px;	
+	}
+
+	.container {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    #right-column {
+        margin-left: 0;
+    }
+
+	.sub-columns {
+        flex-direction: column;
+    }
+}
