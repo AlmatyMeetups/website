@@ -84,6 +84,7 @@ h2 {
     line-height: 47px;
     padding: 0 29px;
     margin: 0;
+    margin-top: 10px;
     margin-right: 10px;
     white-space: nowrap;
 
@@ -109,6 +110,16 @@ h2 {
     cursor: pointer;
     outline: 0;
     transition: color .1s linear, background-color .1s linear, border-color .1s linear;
+}
+
+.button_insagram {
+    background-color: #e1306c;
+    border: 2px solid #e1306c;
+}
+
+.button_telegram {
+    background-color: #0088cc;
+    border: 2px solid #0088cc;
 }
 
 .separator {
