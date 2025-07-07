@@ -190,6 +190,13 @@ h2 {
     align-items: left;
 }
 
+@media (max-width: 768px) {
+    #text-column {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 #image-column {
     justify-content: left;
     align-items: left;
