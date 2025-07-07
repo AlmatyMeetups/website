@@ -139,6 +139,16 @@ h2 {
     mask-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    .logo {
+        max-width: 100%; /* Allow the image to be as wide as the container on smaller screens */
+    }
+}
+
+.telegram_invite_qr {
+    width: 150px;
+}
+
 .main-content {
     display: flex;
     flex: 1;
@@ -169,22 +179,14 @@ h2 {
     flex: 1;
 }
 
-#image-column {
-	flex: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	padding: 10px;
-}
-
-.rounded-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
 #text-column {
-	flex: 6;
+	justify-content: left;
+    align-items: left;
+}
+
+#image-column {
+    justify-content: left;
+    align-items: left;
 }
 
 footer {
