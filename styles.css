@@ -146,7 +146,13 @@ h2 {
 }
 
 .telegram_invite_qr {
-    width: 150px;
+    max-width: 150px;
+}
+
+@media (max-width: 768px) {
+    .telegram_invite_qr {
+        max-width: 80%; /* Allow the image to be as wide as the container on smaller screens */
+    }
 }
 
 .main-content {
